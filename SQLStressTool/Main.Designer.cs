@@ -52,6 +52,7 @@ namespace SQLStressTool
             this.btn_Start = new System.Windows.Forms.Button();
             this.btn_Stop = new System.Windows.Forms.Button();
             this.gr_conns = new System.Windows.Forms.GroupBox();
+            this.chk_continous = new System.Windows.Forms.CheckBox();
             this.DurationMinutes = new System.Windows.Forms.NumericUpDown();
             this.l_duration = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -76,7 +77,6 @@ namespace SQLStressTool
             this.ProcessTest = new System.Windows.Forms.Timer(this.components);
             this.ElapsedTimeOfTest = new System.Windows.Forms.Timer(this.components);
             this.NewTest = new System.Windows.Forms.Button();
-            this.chk_continous = new System.Windows.Forms.CheckBox();
             this.MenuBar.SuspendLayout();
             this.New_Panel.SuspendLayout();
             this.groupBox1.SuspendLayout();
@@ -345,6 +345,17 @@ namespace SQLStressTool
             this.gr_conns.TabStop = false;
             this.gr_conns.Text = "General Options";
             // 
+            // chk_continous
+            // 
+            this.chk_continous.AutoSize = true;
+            this.chk_continous.Location = new System.Drawing.Point(795, 42);
+            this.chk_continous.Name = "chk_continous";
+            this.chk_continous.Size = new System.Drawing.Size(153, 29);
+            this.chk_continous.TabIndex = 18;
+            this.chk_continous.Text = "Continuous";
+            this.chk_continous.UseVisualStyleBackColor = true;
+            this.chk_continous.CheckedChanged += new System.EventHandler(this.chk_continous_CheckedChanged);
+            // 
             // DurationMinutes
             // 
             this.DurationMinutes.Location = new System.Drawing.Point(304, 98);
@@ -600,17 +611,6 @@ namespace SQLStressTool
             this.NewTest.Text = "Start New Test";
             this.NewTest.UseVisualStyleBackColor = true;
             this.NewTest.Click += new System.EventHandler(this.NewTest_Click);
-            // 
-            // chk_continous
-            // 
-            this.chk_continous.AutoSize = true;
-            this.chk_continous.Location = new System.Drawing.Point(795, 42);
-            this.chk_continous.Name = "chk_continous";
-            this.chk_continous.Size = new System.Drawing.Size(141, 29);
-            this.chk_continous.TabIndex = 18;
-            this.chk_continous.Text = "Continous";
-            this.chk_continous.UseVisualStyleBackColor = true;
-            this.chk_continous.CheckedChanged += new System.EventHandler(this.chk_continous_CheckedChanged);
             // 
             // Main
             // 
