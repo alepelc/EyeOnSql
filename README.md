@@ -10,7 +10,7 @@ Once started, you can start a new test where you can define the amount of concur
 
 This tool allows only the selection of folders containing .sql files to run (future versions will be more flexible). When more than one file resides on the selected folder, each execution will randomly choose one of the files
 
-![alt text](Pics/Logs.png)
+![alt text](Pics/SelectFiles.png)
 
 Next, start the test and look for its progress. The test can be stopped at any point or let it finish based on the defined duration (if test is set to continous, then manual stop is the only way to stop it)
 
