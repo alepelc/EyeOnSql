@@ -29,7 +29,9 @@ Currently an option for checking the metric of some counters is being developed.
 
 This tool was designed as a simple load test agent against a SQL server. The idea of it is to stress a database and server with some predefined queries.
 
-This tool is still under development, so it still has some bugs and some improvements needed. I'm working on several aspects of it, but of course I'm open to comments and to nice-to-have things. Also, if you think this application deserves a donation, I'll be glad to accept one. If you can support this, please use the Donate button on the following link (Personal Blog): http://alepelc.wordpress.com
+This tool is still under development, so it still has some bugs and some improvements needed. I'm working on several aspects of it, but of course I'm open to comments and to nice-to-have things.
+
+If you think this application deserves a donation, I'll gladly accept it... you can do so using paypal on this link: https://www.paypal.me/APelc 
 
 Alejandro Pelc
 
