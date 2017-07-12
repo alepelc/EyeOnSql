@@ -4,7 +4,7 @@ Eye on SQL - Load Test is a tool designed for volume tests against SQL Server.
 
 # Starting
 
-Once started, you can start a new test where you can define the amount of concurrent connections, if the load is all at once or by increments, the duration and if the test is Continous (in which case the previous settings defaults to predefined values)
+Once started, you can start a new test where you can define the amount of concurrent connections, if the load is all at once or by increments, the duration and if the test is Continuous (in which case the previous settings defaults to predefined values)
 
 ![alt text](Pics/Initial.png)
 
@@ -12,7 +12,7 @@ This tool allows only the selection of folders containing .sql files to run (fut
 
 ![alt text](Pics/SelectFiles.png)
 
-Next, start the test and look for its progress. The test can be stopped at any point or let it finish based on the defined duration (if test is set to continous, then manual stop is the only way to stop it)
+Next, start the test and look for its progress. The test can be stopped at any point or let it finish based on the defined duration (if test is set to continuous, then manual stop is the only way to stop it)
 
 ![alt text](Pics/Execution.png)
 
