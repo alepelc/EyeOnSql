@@ -90,6 +90,7 @@ namespace SQLStressTool
             // 
             // MenuBar
             // 
+            this.MenuBar.GripMargin = new System.Windows.Forms.Padding(2, 2, 0, 2);
             this.MenuBar.ImageScalingSize = new System.Drawing.Size(32, 32);
             this.MenuBar.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.fileToolStripMenuItem,
@@ -109,13 +110,13 @@ namespace SQLStressTool
             this.toolStripSeparator1,
             this.exitToolStripMenuItem});
             this.fileToolStripMenuItem.Name = "fileToolStripMenuItem";
-            this.fileToolStripMenuItem.Size = new System.Drawing.Size(64, 36);
+            this.fileToolStripMenuItem.Size = new System.Drawing.Size(72, 36);
             this.fileToolStripMenuItem.Text = "File";
             // 
             // newTestToolStripMenuItem
             // 
             this.newTestToolStripMenuItem.Name = "newTestToolStripMenuItem";
-            this.newTestToolStripMenuItem.Size = new System.Drawing.Size(310, 38);
+            this.newTestToolStripMenuItem.Size = new System.Drawing.Size(345, 44);
             this.newTestToolStripMenuItem.Text = "New Test (Ctrl+ N)";
             this.newTestToolStripMenuItem.Click += new System.EventHandler(this.newTestToolStripMenuItem_Click);
             // 
@@ -123,19 +124,19 @@ namespace SQLStressTool
             // 
             this.closetestmenu.Enabled = false;
             this.closetestmenu.Name = "closetestmenu";
-            this.closetestmenu.Size = new System.Drawing.Size(310, 38);
+            this.closetestmenu.Size = new System.Drawing.Size(345, 44);
             this.closetestmenu.Text = "Close Test";
             this.closetestmenu.Click += new System.EventHandler(this.closetestmenu_Click);
             // 
             // toolStripSeparator1
             // 
             this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(307, 6);
+            this.toolStripSeparator1.Size = new System.Drawing.Size(342, 6);
             // 
             // exitToolStripMenuItem
             // 
             this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
-            this.exitToolStripMenuItem.Size = new System.Drawing.Size(310, 38);
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(345, 44);
             this.exitToolStripMenuItem.Text = "Exit";
             this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
             // 
@@ -144,13 +145,13 @@ namespace SQLStressTool
             this.helpToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.aboutToolStripMenuItem});
             this.helpToolStripMenuItem.Name = "helpToolStripMenuItem";
-            this.helpToolStripMenuItem.Size = new System.Drawing.Size(77, 36);
+            this.helpToolStripMenuItem.Size = new System.Drawing.Size(85, 36);
             this.helpToolStripMenuItem.Text = "Help";
             // 
             // aboutToolStripMenuItem
             // 
             this.aboutToolStripMenuItem.Name = "aboutToolStripMenuItem";
-            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(179, 38);
+            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(214, 44);
             this.aboutToolStripMenuItem.Text = "About";
             this.aboutToolStripMenuItem.Click += new System.EventHandler(this.aboutToolStripMenuItem_Click);
             // 
@@ -503,7 +504,7 @@ namespace SQLStressTool
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(16, 83);
+            this.label1.Location = new System.Drawing.Point(16, 128);
             this.label1.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(98, 25);
@@ -512,12 +513,12 @@ namespace SQLStressTool
             // 
             // txt_results
             // 
-            this.txt_results.Location = new System.Drawing.Point(22, 113);
+            this.txt_results.Location = new System.Drawing.Point(22, 170);
             this.txt_results.Margin = new System.Windows.Forms.Padding(6);
             this.txt_results.Multiline = true;
             this.txt_results.Name = "txt_results";
             this.txt_results.ReadOnly = true;
-            this.txt_results.Size = new System.Drawing.Size(638, 342);
+            this.txt_results.Size = new System.Drawing.Size(638, 285);
             this.txt_results.TabIndex = 7;
             // 
             // progressBar1

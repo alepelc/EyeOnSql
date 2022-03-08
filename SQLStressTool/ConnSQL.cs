@@ -25,7 +25,7 @@ namespace SQLStressTool
         private void ConnSQL_Load(object sender, EventArgs e)
         {
             chk_Integrated.Checked = true;
-            box_dbs.Enabled = false;
+            box_dbs.Enabled = true;
             btn_connect.Enabled = false;
             button1.Enabled = false;
             box_dbs.Items.Clear();
@@ -88,7 +88,10 @@ namespace SQLStressTool
             }
             
         }
-
+        void box_dbs_Click(object sender, System.EventArgs e)
+        {
+            btn_connect_Click(null, null);
+        }
 
         private void btn_connect_Click(object sender, EventArgs e)
         {

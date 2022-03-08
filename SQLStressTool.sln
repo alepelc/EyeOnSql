@@ -1,9 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.26228.9
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29519.87
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SQLStressTool", "SQLStressTool\SQLStressTool.csproj", "{BAC2D8E7-9E4F-44E6-9932-76F2B60CF52F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SQLStressToolCmd", "SQLStressToolCmd\SQLStressToolCmd.csproj", "{D4642148-D2AF-41C3-A7D9-33A3881B181F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,8 +17,15 @@ Global
 		{BAC2D8E7-9E4F-44E6-9932-76F2B60CF52F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BAC2D8E7-9E4F-44E6-9932-76F2B60CF52F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BAC2D8E7-9E4F-44E6-9932-76F2B60CF52F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D4642148-D2AF-41C3-A7D9-33A3881B181F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D4642148-D2AF-41C3-A7D9-33A3881B181F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D4642148-D2AF-41C3-A7D9-33A3881B181F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D4642148-D2AF-41C3-A7D9-33A3881B181F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {2CDD95E5-E0A3-4CF5-9985-10F021C34DD0}
 	EndGlobalSection
 EndGlobal

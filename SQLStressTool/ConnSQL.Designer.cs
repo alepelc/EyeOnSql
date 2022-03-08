@@ -62,6 +62,7 @@ namespace SQLStressTool
             this.box_dbs.TabIndex = 6;
             this.box_dbs.SelectedIndexChanged += new System.EventHandler(this.box_dbs_SelectedIndexChanged);
             this.box_dbs.KeyUp += new System.Windows.Forms.KeyEventHandler(this.box_dbs_KeyUp);
+            this.box_dbs.Click += new System.EventHandler(this.box_dbs_Click);
             // 
             // chk_Integrated
             // 
@@ -162,11 +163,11 @@ namespace SQLStressTool
             // btn_connect
             // 
             this.btn_connect.Enabled = false;
-            this.btn_connect.Location = new System.Drawing.Point(8, 178);
+            this.btn_connect.Location = new System.Drawing.Point(64, 180);
             this.btn_connect.Name = "btn_connect";
-            this.btn_connect.Size = new System.Drawing.Size(75, 23);
+            this.btn_connect.Size = new System.Drawing.Size(150, 23);
             this.btn_connect.TabIndex = 5;
-            this.btn_connect.Text = "Connect";
+            this.btn_connect.Text = "Retrieve Databases";
             this.btn_connect.UseVisualStyleBackColor = true;
             this.btn_connect.Click += new System.EventHandler(this.btn_connect_Click);
             // 

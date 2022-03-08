@@ -29,6 +29,7 @@ namespace SQLStressTool
         public ArrayList _PerformanceResutls;
 
         public string[] _Selectfiles;
+        public string[] _files;
         public bool _KeepRunning = true;
         private int _MinsToRun = 0;
         private int _MaxFiles = 30;
@@ -222,27 +223,32 @@ namespace SQLStressTool
 
         private void btn_browseSelect_Click(object sender, EventArgs e)
         {
-            int file = 0;
+            //int file = 0;
             DialogResult _FolderSelect = this.BrowseFolder.ShowDialog();
             if (_FolderSelect == DialogResult.OK)
             {
                 WarningLabel.Visible = false;
                 txt_DirSelect.Text = this.BrowseFolder.SelectedPath.ToString();
-                string[] _files = Directory.GetFiles(txt_DirSelect.Text, "*.sql");
+
+                //file = Directory.GetFiles(txt_DirSelect.Text, "*.sql").Length;
+
                 txt_selectFiles.Text = string.Empty;
 
-                foreach (string _file in _files)
-                {
-                    txt_selectFiles.Text += _file +"\r\n";
-                    file++;
-                    if (file == _MaxFiles)
-                    {
-                        WarningLabel.Text = "The folder contains more files than the allowed. Only the first 30 will be used.";
-                        WarningLabel.Visible = true;
-                        break;
-                    }
-                }
+                _files = Directory.GetFiles(txt_DirSelect.Text, "*.sql");
+
+                //foreach (string _file in _files)
+                //{
+                //    txt_selectFiles.Text += _file +"\r\n";
+                //    file++;
+                //    if (file == _MaxFiles)
+                //    {
+                //        WarningLabel.Text = "The folder contains more files than the allowed. Only the first 30 will be used.";
+                //        WarningLabel.Visible = true;
+                //        break;
+                //    }
+                //}
             }
+            txt_selectFiles.Text = _files.Length.ToString();
         }
 
 
@@ -280,6 +286,9 @@ namespace SQLStressTool
             
             try
             {
+                int files = Directory.GetFiles(txt_DirSelect.Text, "*.sql").Length;
+
+
                 closetestmenu.Enabled = false;
                 _Crono = Convert.ToDateTime("00:00:00");
                 StartTime = DateTime.Now;
@@ -292,7 +301,8 @@ namespace SQLStressTool
                 txt_results.BeginInvoke(new MethodInvoker(delegate () { txt_results.Text += "Start of load test.\r\n"; }));
                 _Stop = false;
                 bool _filevalid = true;
-                string[] _Selectfiles = txt_selectFiles.Lines;
+                //string[] _Selectfiles = txt_selectFiles.Lines;
+                string[] _Selectfiles = _files;
                 string _filestoprocess = string.Empty;
                 object _Objs;
 
